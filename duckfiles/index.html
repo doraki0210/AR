@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="duckdone.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.0986069857420438m 0.01102550560656887m -0.0014048914844817656m" data-normal="0.10372690354595884m 0.9241175443114414m 0.3677601035682887m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">掌(帶蹼)</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.06783278724495304m 0.21315086765299865m -0.07324540794634657m" data-normal="0.8140025139148407m 0.5148469161630425m -0.2689471328304599m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">翅</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.14179470289709403m 0.4282584936046943m 0.14103828190894896m" data-normal="0.6128919074685935m 0.6399503546468485m 0.4634943940835551m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">頭</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-0.1429095165314864m 0.3634796136981174m 0.20327733015842772m" data-normal="0.9217851998147301m 0.3865591392955448m 0.029733436222646584m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">喙</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="-0.16607093116405872m 0.1361693516849638m -0.23461762814164022m" data-normal="-0.1401460982437255m -0.5297743356347878m -0.8364796617071926m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">尾</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="-0.16063475109245917m 0.18759850812179032m 0.16475178962420567m" data-normal="-0.08401482703138093m -0.05237303677328984m 0.9950872192215268m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">胸</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  </body>
+</html>
