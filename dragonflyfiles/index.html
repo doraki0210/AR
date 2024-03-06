@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="dragonflydone.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="-410.5738104632502m 1832.515695866903m 0.12885452601645014m" data-normal="0.4716945409178757m 0.09167695343304492m 0.8769832360299199m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">頭</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-410.4336613181794m 1832.5361341527985m 0.08048950880602523m" data-normal="-0.060698279339946926m 0.9830556804548378m -0.17296603137797262m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">翅</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-410.62144934403375m 1832.5100067557746m -0.10247749471323314m" data-normal="0.984407085042426m 1.237882736910273e-7m -0.17590534647434256m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">尾</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-410.5516067112705m 1832.4592515640436m 0.09801303234532152m" data-normal="0.27756705714880575m 0.10020240284162275m 0.9554663820619315m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">腳</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="-410.6073114107717m 1832.5196242943362m 0.12357952411424095m" data-normal="-0.9353093538598322m -0.003978399523421956m 0.3538086840646163m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">眼</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  </body>
+</html>

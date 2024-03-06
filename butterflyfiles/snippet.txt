@@ -1,0 +1,22 @@
+<model-viewer src="butterflydone.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+    <button class="Hotspot" slot="hotspot-1" data-position="0.0009449979957930392m 0.022554369669488785m 0.5323767372629411m" data-normal="0m -0.5833436251827204m 0.812225470518305m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">翅</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="-0.008276212951218134m 0.0038114674484740346m 0.5206375336670491m" data-normal="-0.9751245865681909m -0.2151075682170385m 0.05348621098906949m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">眼</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="0.0014560605322559259m 0.0018322975844048683m 0.5175435059290371m" data-normal="-0.3957135808904744m 0.197856859969646m -0.8968073510301919m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">腳</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="0.00981615354943939m 0.0059086648576696325m 0.5196510625880424m" data-normal="0.08702288882655701m 0.02880061184628771m -0.9957899083529418m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">尾</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="-0.007863351414448314m 0.005210736261228766m 0.521482319979908m" data-normal="-0.8735342318357293m 0.38686764371580346m 0.29541728462793854m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">頭</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
