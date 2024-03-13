@@ -1,0 +1,22 @@
+<model-viewer src="mm_project.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+    <button class="Hotspot" slot="hotspot-1" data-position="-0.10622137319817765m 0.3587065033367546m 0.030210993962054726m" data-normal="0.02176664715924013m 0.5022045006140412m 0.8644748999447275m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">頭</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="0.04751155560026943m 0.20716950743949242m 0.07383612182479529m" data-normal="0.04240861320433964m 0.1324532462347237m 0.9902815998936709m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">翼</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-0.03931160078393181m 0.0450359315246954m 0.018043994944670863m" data-normal="-0.22190245955604063m 0.6401821699010539m 0.7354767758289571m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">蹼</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-0.17595447435540512m 0.2879979006951655m 0.014347037718334465m" data-normal="-0.08570685367459102m -0.5014382659939367m 0.8609378610737225m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">嘴</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="0.18928601223627378m 0.2565231589582588m 0.017906019634156292m" data-normal="0.2278349427520557m 0.4705616444664669m 0.8524452930353843m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">尾</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
